@@ -20,7 +20,7 @@ Route::get('blogs','FrontendController@blogs');
 Route::get('single','FrontendController@single');
 Route::get('galleries','FrontendController@galleries');
 Route::get('works','FrontendController@works');
-Route::get('contact', 'FrontEndController@contact');
+Route::get('contact', 'FrontendController@contact');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
