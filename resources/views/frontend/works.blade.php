@@ -17,7 +17,7 @@
                         <div id="gallery-header-center-right">
                             <div class="gallery-header-center-right-links" id="filter-all">All</div>
                             <div class="gallery-header-center-right-links" id="filter-studio">Studio</div>
-                            <div class="gallery-header-center-right-links" `id="filter-landscape">Landscapes</div>
+                            <div class="gallery-header-center-right-links" id="filter-landscape">Landscapes</div>
                         </div>
                     </div>
                 </div>
@@ -26,11 +26,17 @@
 
                     <div id="gallery-content-center">
                         @foreach($works as $work)
-                        <a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" id="imagelightbox" class="all studio"/> </a>
+                            {{--{{ $work->view === "studio" ? "Hi" : "Goodbye" }}--}}
+                            @if ($work->view === "studio")
+                                <a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" id="imagelightbox" class="all studio"/> </a>
+                            @else
+                                <a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" class="all landscape"></a>
+                            @endif
+                        {{--<a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" id="imagelightbox" class="all studio"/> </a>--}}
                         {{--<a href="assets/landscape1.jpg" data-lightbox="studio1"><img src="assets/landscape1.jpg" class="all landscape"></a>--}}
                         {{--<a href="assets/studio2.jpg" data-lightbox="studio1"><img src="assets/studio2.jpg" class="all studio"/></a>--}}
                         {{--<a href="assets/studio25.jpg" data-lightbox="studio1"><img src="assets/studio25.jpg" class="all studio"/></a>--}}
-                        <a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" class="all landscape"></a>
+                        {{--<a href="{{$work->image->path}}" data-lightbox="studio1"><img src="{{$work->image->path}}" class="all landscape"></a>--}}
                         {{--<a href="assets/studio27.jpg" data-lightbox="studio1"><img src="assets/studio27.jpg" class="all studio"/></a>--}}
                         {{--<a href="assets/studio3.jpg" data-lightbox="studio1"><img src="assets/studio3.jpg" class="all studio"/></a>--}}
                         {{--<a href="assets/landscape3.jpg" data-lightbox="studio1"><img src="assets/landscape3.jpg" class="all landscape"></a>--}}
