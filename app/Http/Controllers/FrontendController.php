@@ -8,6 +8,7 @@ class FrontendController extends Controller
 {
     public function index()
     {
+
         return view('main');
     }
     public function blogs()
@@ -26,7 +27,8 @@ class FrontendController extends Controller
 
     public function works()
     {
-        return view('frontend.works');
+        $works = Work::latest()->get();
+        return view('frontend.works',compact('works'));
     }
     public function contact()
     {

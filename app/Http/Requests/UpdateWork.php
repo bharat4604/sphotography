@@ -36,7 +36,7 @@ class UpdateWork extends FormRequest
     {
         $data = [
             'title'            => $this->get('title'),
-            'view'             => empty($this->get('view')) ? 'frontend.work.show' : $this->get('view'),
+            'view'             =>  $this->get('work'),
             'is_published'     => $this->has('publish'),
         ];
 

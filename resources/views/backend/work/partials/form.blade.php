@@ -26,9 +26,15 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
+                        <label class="text-default-light">Category of Image:</label>
+                        {{ Form::select('works',['studio'=> 'studio','landscape' => 'landscape']) }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
                         <label class="text-default-light">Featured Image</label>
                         @if(isset($work) && $work->image)
-                            <input type="file" name="image" class="dropify" data-default-file="{{ asset($work->image->thumbnail(260,198)) }}"/>
+                            <input type="file" name="image" class="dropify" data-default-file="{{ asset($work->image->path)}}"/>
                         @else
                             <input type="file" name="image" class="dropify"/>
                         @endif

@@ -7,18 +7,48 @@
             <img src="img/dolon.jpg" alt="" width="100%">
         </div>
         <div class="col-md-4 col-sm-12 contact-bar">
-            <img class="map-img" src="img/map.jpg" alt="" width="100%">
+            <script>
+                function loadMap() {
+
+                    var mapOptions = {
+                        center:new google.maps.LatLng(27.695531, 85.309458),
+                        zoom:17
+                    }
+
+                    var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(35.817616, 139.677887),
+                        map: map,
+                        draggable:true,
+                        icon:'/scripts/img/logo-footer.png'
+                    });
+
+                    marker.setMap(map);
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content:"<b style='font-family:\"Comic Sans MS\", cursive, sans-serif;'>Saitama, Tokyo Based, Japan..</b><br>" +
+//                        "<span>Tripureshwor,Teku Road,Kathmandu Nepal</span><br>"+
+//                        "<b class=\"fa fa-phone\">:+977 1426160 |Sunday-Friday|10am-6pm</b><br>"+
+                        "<span>Email:sphotography.com</span>"
+
+                    });
+
+                    infowindow.open(map,marker);
+                }
+            </script>
+            <body onload = "loadMap()">
+            <div id = "sample" style="border:0; width:100%; height:250px;" allowfullscreen></div>
+            </body>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD19cqU2rIzBHOPL_t8GhJJ9cmi-HNpULg&callback=initialize"></script>
             <h3 class="interest-text text-center"> Thanks for your Interest </h3>
             <br>
             <div class="col-md-6 add-text">
-                44, Akhaliya Rd. Akhaliya
-                CA 94019. USA CO.
-                (561) 456-4567
+               Saitama, Tokyo Based,
+               Japan..
             </div>
             <div class="col-md-6 add-text">
-                Summer Office Ours
-                (March-October)
-                Mon-Fri (am-6am PST)
+               Kathmandu, Nepal Based..
             </div>
             <br>
             <div class="col-sm-12 col-md-12">

@@ -36,7 +36,8 @@ class StoreWork extends FormRequest
     {
         $data = [
             'title'            => $this->get('title'),
-            'view'             => empty($this->get('view')) ? 'frontend.work.show' : $this->get('view'),
+            'view'             => $this->get('works'),
+//            'view'             => empty($this->get('view')) ? 'frontend.work.show' : $this->get('view'),
             'is_published'     => $this->has('publish'),
         ];
 

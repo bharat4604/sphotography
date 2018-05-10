@@ -20,8 +20,9 @@
                         <thead>
                         <tr>
                             <th width="10%">#</th>
-                            <th width="35%">Title</th>
-                            <th width="45%">Published</th>
+                            <th width="30%">Title</th>
+                            <th width="20%">View</th>
+                            <th width="30%">Published</th>
                             <th width="10%" class="text-right">Actions</th>
                         </tr>
                         </thead>

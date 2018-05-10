@@ -15,7 +15,7 @@ class WorkController extends Controller
 {
     public function index()
     {
-        $works = Work::latest()->get([ 'slug', 'title', 'is_published' ]);
+        $works = Work::latest()->get([ 'slug', 'title', 'view', 'is_published' ]);
         return view('backend.work.index', compact('works'));
     }
     public function create()
@@ -69,6 +69,7 @@ class WorkController extends Controller
 
     public function edit(Work $work)
     {
+//        $works = Work::latest()->get([ 'slug', 'title', 'view', 'is_published' ]);//
         return view('backend.work.edit', compact('work'));
     }
     public function show(Work $work)

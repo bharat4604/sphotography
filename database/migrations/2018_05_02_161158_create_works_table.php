@@ -19,7 +19,7 @@ class CreateWorksTable extends Migration
             $table->increments('id');
             $table->string('slug', 100)->unique();
             $table->string('title', 100);
-            $table->string('view', 100);
+            $table->enum('view', array('studio', 'landscape'));
             $table->boolean('is_published')->default(false);
             $table->boolean('is_primary')->default(false);
             $table->timestamps();

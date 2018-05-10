@@ -1,6 +1,7 @@
 <tr>
     <td>{{++$key}}</td>
     <td>{{ str_limit($work->title) }}</td>
+    <td>{{ str_limit($work->view, 47) }}</td>
     <td>
         <span class="badge">{{ $work->is_published ? 'Yes' : 'No' }}</span>
 
