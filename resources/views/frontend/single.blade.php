@@ -5,14 +5,14 @@
         <div class=" col-md-3 col-sm-12 col-xs-12 page-container sidebar visible-md visible-lg">
             <div class="home-page-header">
                 <div class="post-category">
-                    <h4 class="sidebar-title">Categories</h4>
-                    <ul class="categories-link">
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Sports</a></li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Nature</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Wild</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Travel</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Food</a></li>
-                    </ul>
+                    <h4 class="sidebar-title"><a href="{{url('/blogs')}}">Back TO Blog</a></h4>
+                    {{--<ul class="categories-link">--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Sports</a></li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Nature</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Wild</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Travel</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Food</a></li>--}}
+                    {{--</ul>--}}
                 </div>
 
                 <div class="post-category">
@@ -34,7 +34,6 @@
                     </p>
                     <img class="featured" src="img/dolon.png" width="200" align="left" alt="Background">
                 </div>
-
             </div>
 
         </div><!-- /.container -->
@@ -69,17 +68,6 @@
                     </ul>
                 </div>
 
-                <div class="post-category">
-                    <h4 class="sidebar-title">Recent Blog Posts</h4>
-                    <ul class="categories-link">
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Sports</a></li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Nature</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Wild</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Travel</a> </li>
-                        <li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Food</a> </li>
-                    </ul>
-                </div>
-
                 <div class="blog-post">
                     <h4 class="sidebar-title">About Us</h4>
                     <p class="blog-text">
@@ -88,6 +76,19 @@
                     </p>
                     <img class="featured" src="img/dolon.png" width="300" alt="Background">
                 </div>
+
+                <div class="post-category">
+                    <h4 class="sidebar-title"><a href="{{url('/blog')}}">Recent Blog Posts</a></h4>
+                    {{--<ul class="categories-link">--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Sports</a></li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Nature</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Wild</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Travel</a> </li>--}}
+                        {{--<li class="category-item"><i class="fa fa-angle-right"></i><a href="#">Food</a> </li>--}}
+                    {{--</ul>--}}
+                </div>
+
+
 
             </div>
 

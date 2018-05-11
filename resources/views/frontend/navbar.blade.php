@@ -17,7 +17,7 @@
     <a class="navmenu-brand" href="#"><img src="img/logo.png" width="160"></a>
     <div class="social">
         <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.facebook.com/Sanju-Photography-677069205822751/"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-pinterest-p"></i></a>
         <a href="#"><i class="fa fa-google-plus"></i></a>
