@@ -47,7 +47,7 @@
                     <div class="col-sm-12">
                         <label class="text-default-light">Featured Image</label>
                         @if(isset($gallery) && $gallery->image)
-                            <input type="file" name="image" class="dropify" data-default-file="{{ asset($gallery->image->thumbnail(260,198)) }}"/>
+                            <input type="file" name="image" class="dropify" data-default-file="{{ asset($gallery->image->path) }}"/>
                         @else
                             <input type="file" name="image" class="dropify"/>
                         @endif

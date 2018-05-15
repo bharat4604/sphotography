@@ -14,7 +14,7 @@ class Work extends Model
     protected $fillable = [
         'slug',
         'title',
-        'view',
+//        'view',
         'is_published',
     ];
 
